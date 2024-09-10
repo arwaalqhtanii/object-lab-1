@@ -127,7 +127,7 @@ const characters = [
   const shorter200 = characters.every(character => character.height < 200);
 
   const blueeyes = characters.some(character => character.eye_color === "blue");
-  
+  //12-Is there at least one character taller than 210?
   const taller210 = characters.some(character => character.height > 210);
   
  
