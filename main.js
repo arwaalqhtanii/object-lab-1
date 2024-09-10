@@ -33,40 +33,40 @@ console.log(person.job.tweaq.tital + " " + person.job.stc.tital);
 
 
 //lab 1
-// const user = {
-//     name: "Arwa",
-//     email: "arwaalqhtani2@gmail.com",
-//     id: 1108688647,
-//     Available: false,
-//     address: {
-//         Abha: {
-//             name: "Abha",
-//             street: "5555",
-//             location: "Mansk"
-//         },
-//         ryadh: {
-//             name: "ryadh",
-//             street: "5555",
-//             location: "nerjes"
-//         }
-//     },
-//     skills: ["JavaScript", "Cybersecurity", "sql"],
-//     check: function () {
-//         return this.Available ? "user is available for work " : "user is not available for work ";
-//     }
-// };
-// console.log(user);
-// console.log(user.name);
-// user.id = 1108688647;
-// console.log(user.id);
-// delete user.email;
-// console.log(user);
-// user.Available = true;
-// console.log(user.check());
-// console.log(user.address);
-// console.log(user.address.ryadh.name);
-// console.log(user.skills[2]);
-// console.log(user.skills.join(" , "));
+const user = {
+    name: "Arwa",
+    email: "arwaalqhtani2@gmail.com",
+    id: 1108688647,
+    Available: false,
+    address: {
+        Abha: {
+            name: "Abha",
+            street: "5555",
+            location: "Mansk"
+        },
+        ryadh: {
+            name: "ryadh",
+            street: "5555",
+            location: "nerjes"
+        }
+    },
+    skills: ["JavaScript", "Cybersecurity", "sql"],
+    check: function () {
+        return this.Available ? "user is available for work " : "user is not available for work ";
+    }
+};
+console.log(user);
+console.log(user.name);
+user.id = 1108688647;
+console.log(user.id);
+delete user.email;
+console.log(user);
+user.Available = true;
+console.log(user.check());
+console.log(user.address);
+console.log(user.address.ryadh.name);
+console.log(user.skills[2]);
+console.log(user.skills.join(" , "));
 
 //lab 2
 
@@ -128,10 +128,9 @@ const characters = [
 
   const blueeyes = characters.some(character => character.eye_color === "blue");
   
-  // 12. Is there at least one character taller than 210?
   const taller210 = characters.some(character => character.height > 210);
   
-  // Log results
+ 
   console.log("first name that has blue eyes:", blue);
   console.log("first gender that is his mass is over 50:", first50);
   console.log("characters with height less than 200:", height200);
